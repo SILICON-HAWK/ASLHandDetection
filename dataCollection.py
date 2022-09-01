@@ -10,7 +10,7 @@ detector = HandDetector(maxHands=1)
 offset = 20
 imgSize = 300
 
-folder = 'M'
+folder = 'O'
 counter = 0
 
 while True:
@@ -50,6 +50,5 @@ while True:
     if key == ord("s"):
         counter += 1
         # cv.im write(f'{folder}/Image_{time.time()}.jpg', imgCrop_flip)
-        cv.imwrite(f'C:/Users/vikal/PycharmProjects/ASLHandDetection/venv/Data/{folder}/Image_{time.time()}.jpg', imgCrop_flip)
+        cv.imwrite(f'D:/UNIVERSITY/PROJECT EXIBITION SEM3/ASLsemProject/ASLHandDetection/venv/Data/{folder}/Image_{time.time()}.jpg', imgCrop_flip)
         print(counter)
-
